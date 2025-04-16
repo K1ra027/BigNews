@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+
+
+
+
+   {% for i in category %}
+    <h1>{{i.title}}</h1>
+    <p>{{i.category_name}}</p>
+    <img src="{{i.image.url}}" style="width: 200px;" alt="">
+    {% endfor %}
+{% endblock %}
+
+
+
+ 

@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+{% block title %}HOMEPAGE
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+    <h1>Welcome to my site!!!</h1>
+    {% for i in news %}
+    <a href="{% url 'detail' i.id %}"><h1>{{i.title}}</h1></a>
+    <img src="{{i.image.url}}" alt="qwerty" style="width: 400px;">
+    {% endfor %}
+{% endblock %}
+    
